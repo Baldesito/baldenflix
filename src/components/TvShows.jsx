@@ -26,10 +26,16 @@ function TvShows1() {
                 className="rounded-0 no-border-left "
                 style={{ backgroundColor: "#221f1f" }}
               />
-              <Dropdown.Menu>
-                <Dropdown.Item href="#">Comedy</Dropdown.Item>
-                <Dropdown.Item href="#">Drama</Dropdown.Item>
-                <Dropdown.Item href="#">Thriller</Dropdown.Item>
+              <Dropdown.Menu style={{ backgroundColor: "#221f1f" }}>
+                <Dropdown.Item className="text-white" href="#">
+                  Comedy
+                </Dropdown.Item>
+                <Dropdown.Item className="text-white" href="#">
+                  Drama
+                </Dropdown.Item>
+                <Dropdown.Item className="text-white" href="#">
+                  Thriller
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </div>

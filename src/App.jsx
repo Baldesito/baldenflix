@@ -10,12 +10,16 @@ import GoditiFilm1 from "./components/AreaPopCorn";
 import GoditiFilm2 from "./components/AreaPopCorn2";
 import GoditiFilm3 from "./components/AreaPopCorn3";
 import Footer from "./components/Footer";
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <NavBar />
 
+        {/* <header className="App-header">
+          <SimpleSlider />
+        </header>  */}
         <div className="container-fluid px-4">
           <Container>
             <TvShows1 />
