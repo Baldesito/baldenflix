@@ -6,7 +6,7 @@ import SingoloFilm from "./SingoloFilm";
 
 // funzione per visualizzare i film
 function GoditiFilm2() {
-  const [movies, setMovies] = useState([]); //
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     const fetchMovies = async () => {
@@ -15,7 +15,7 @@ function GoditiFilm2() {
           `http://www.omdbapi.com/?apikey=10ea4b14&s="yellowstone`
         );
         const data = await response.json();
-        const limiteFilm = data.Search.slice(0, 6); // limita i risultati a 5 film
+        const limiteFilm = data.Search.slice(0, 6); // limita i risultati a 6 film
         setMovies(limiteFilm); // l'elenco dei film
       } catch (error) {
         console.error("Errore nel recupero dei dati dei film:", error);
@@ -26,6 +26,7 @@ function GoditiFilm2() {
   }, []);
 
   return (
+    // la card per i film
     <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-4 row-cols-xl-6 mb-4">
       {movies.map((movie) => (
         <SingoloFilm
