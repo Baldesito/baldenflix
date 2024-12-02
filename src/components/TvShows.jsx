@@ -5,7 +5,7 @@ import { Dropdown, ButtonGroup, Button } from "react-bootstrap";
 
 function TvShows1() {
   return (
-    <div>
+    <div className="pt-5">
       <div className="d-flex justify-content-between">
         <div className="d-flex">
           <h2 className="mb-4">TV Shows</h2>

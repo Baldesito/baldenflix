@@ -10,6 +10,7 @@ import GoditiFilm1 from "./components/AreaPopCorn";
 import GoditiFilm2 from "./components/AreaPopCorn2";
 import GoditiFilm3 from "./components/AreaPopCorn3";
 import Footer from "./components/Footer";
+import SimpleSlider from "./components/SlidePause";
 
 class App extends Component {
   render() {
@@ -21,6 +22,9 @@ class App extends Component {
           <SimpleSlider />
         </header>  */}
         <div className="container-fluid px-4">
+          <Container>
+            <SimpleSlider />
+          </Container>
           <Container>
             <TvShows1 />
           </Container>

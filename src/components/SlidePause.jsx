@@ -9,7 +9,7 @@ export default function SimpleSlider() {
     const fetchMovies = async () => {
       try {
         const response = await fetch(
-          `http://www.omdbapi.com/?apikey=10ea4b14&s=hulk`
+          `http://www.omdbapi.com/?apikey=10ea4b14&s=Series`
         );
         const data = await response.json();
         const limitedMovies = data.Search.slice(0, 6); // Limita i film a 6
@@ -34,14 +34,14 @@ export default function SimpleSlider() {
     <Slider {...settings}>
       {movies.map((movie) => (
         <div key={movie.imdbID}>
-          <Row className="justify-content-center">
+          <Row className="justify-content-center my-4">
             <Col xs={12} sm={6} md={4} lg={3}>
               <img
                 className="img-fluid movie-poster"
                 src={movie.Poster}
                 alt={movie.Title}
               />
-              <h5 className="text-center">{movie.Title}</h5>
+              <h5 className="text-center text-white">{movie.Title}</h5>
             </Col>
           </Row>
         </div>
